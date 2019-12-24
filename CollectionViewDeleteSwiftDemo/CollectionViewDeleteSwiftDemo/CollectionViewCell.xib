@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="CollectionViewDeleteSwiftDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqv-sU-Yv3">
+                        <rect key="frame" x="422" y="0.0" width="60" height="87"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Is3-dI-kou"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Button"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDr-TG-beM">
+                        <rect key="frame" x="0.0" y="0.0" width="482" height="87"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLo-uh-Ve1">
+                        <rect key="frame" x="0.0" y="86" width="482" height="1"/>
+                        <color key="backgroundColor" white="0.92985694919999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fUm-fD-wNM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yDr-TG-beM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MO6-Hk-Nd8"/>
+                <constraint firstAttribute="bottom" secondItem="cLo-uh-Ve1" secondAttribute="bottom" id="Mcn-1T-e2U"/>
+                <constraint firstItem="yDr-TG-beM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QxQ-Q7-AhD"/>
+                <constraint firstAttribute="trailing" secondItem="cLo-uh-Ve1" secondAttribute="trailing" id="Rjz-wW-rWS"/>
+                <constraint firstAttribute="trailing" secondItem="yDr-TG-beM" secondAttribute="trailing" id="Sur-pe-4iD"/>
+                <constraint firstAttribute="bottom" secondItem="yDr-TG-beM" secondAttribute="bottom" id="cQ5-wi-Vco"/>
+                <constraint firstItem="Uqv-sU-Yv3" firstAttribute="top" secondItem="yDr-TG-beM" secondAttribute="top" id="dai-lg-CHC"/>
+                <constraint firstAttribute="trailing" secondItem="Uqv-sU-Yv3" secondAttribute="trailing" id="fBZ-DU-rfJ"/>
+                <constraint firstItem="cLo-uh-Ve1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h9l-aV-yWl"/>
+                <constraint firstItem="Uqv-sU-Yv3" firstAttribute="bottom" secondItem="yDr-TG-beM" secondAttribute="bottom" id="sSz-sq-Cyr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="482" height="87"/>
+            <connections>
+                <outlet property="label" destination="yDr-TG-beM" id="ypS-GY-iPk"/>
+            </connections>
+            <point key="canvasLocation" x="60.799999999999997" y="55.322338830584712"/>
+        </collectionViewCell>
+    </objects>
+</document>
